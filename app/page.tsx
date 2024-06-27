@@ -4,7 +4,7 @@ import keyv from "@/lib/keyv";
 export default async function Home() {
     async function create() {
         'use server'
-        console.log(keyv.get("sf"))
+        console.log(await keyv.get("sf"))
     }
 
     return (
